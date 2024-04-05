@@ -344,10 +344,21 @@
       }
 
       //logout
+      // const logoutButton = document.getElementById("logout");
+      // logoutButton.addEventListener("click", (e) => {
+      //   signOut(auth)
+      //     .then(() => {
+      //       console.log("User Telah Keluar");
+      //       history.back()
+      //     })
+      //     .catch((err) => {
+      //       console.log(err.message);
+      //     });
+      // });
 
       //delete
       async function delDoc() {
-        const deletedatadoc = doc(db, "idh", dokterdocid.value);
+        const deletedatadoc = doc(db, "ids", dokterdocid.value);
         await deleteDoc(deletedatadoc)
           .then(() => {
             console.log("add data sukses");
