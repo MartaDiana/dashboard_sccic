@@ -250,9 +250,9 @@
         nomor.innerHTML = ++plusnomor;
         namaDokter.textContent = doc.data().nama;
         spesialisasiDokter.textContent = doc.data().specialist;
-        alamatDokter.textContent = doc.data().alamat;
-        phoneDokter.textContent = doc.data().phone;
-        status.innerHTML = doc.data().status;
+        alamatDokter.textContent = doc.data().phone;
+        phoneDokter.textContent = doc.data().status;
+        status.innerHTML = doc.data().alamat;
         ControlDiv.innerHTML +=
           '<button style="background-color: Transparent; background-repeat: no-repeat; border: none; cursor: pointer; overflow: hidden; margin-right:12px" data-toggle="modal" data-target="#exampleModal1" onclick="Fillboxes(' +
           plusnomor +
