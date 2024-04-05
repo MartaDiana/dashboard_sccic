@@ -244,15 +244,15 @@
         let phoneDokter = document.createElement("td");
         let ControlDiv = document.createElement("td");
 
-        docList.push([doc.data().nama, doc.data().specialist, doc.data().alamat, doc.data().phone, doc.data().status, doc.id]);
+        docList.push([doc.data().nama, doc.data().specialist, doc.data().alamat, doc.data().status,  doc.data().phone, doc.id]);
 
         trow.setAttribute("data-id", doc.id);
         nomor.innerHTML = ++plusnomor;
         namaDokter.textContent = doc.data().nama;
         spesialisasiDokter.textContent = doc.data().specialist;
-        alamatDokter.textContent = doc.data().phone;
+        alamatDokter.textContent = doc.data().alamat;
         status.innerHTML = doc.data().status;
-        phoneDokter.textContent = doc.data().alamat;
+        phoneDokter.textContent = doc.data().phone;
         ControlDiv.innerHTML +=
           '<button style="background-color: Transparent; background-repeat: no-repeat; border: none; cursor: pointer; overflow: hidden; margin-right:12px" data-toggle="modal" data-target="#exampleModal1" onclick="Fillboxes(' +
           plusnomor +
@@ -330,8 +330,9 @@
           nama: dokternama.value,
           specialist: dokterspe.value,
           alamat: dokteral.value,
-          phone: dokterpho.value,
           status: doktersta.value,
+          phone: dokterpho.value,
+
         })
           .then(() => {
             console.log("add data sukses");
