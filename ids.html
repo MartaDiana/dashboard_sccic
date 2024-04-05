@@ -119,7 +119,7 @@
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Update Data Dokter</h5>
+                  <h5 class="modal-title" id="exampleModalLabel">Update Data </h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -344,21 +344,10 @@
       }
 
       //logout
-      // const logoutButton = document.getElementById("logout");
-      // logoutButton.addEventListener("click", (e) => {
-      //   signOut(auth)
-      //     .then(() => {
-      //       console.log("User Telah Keluar");
-      //       history.back();
-      //     })
-      //     .catch((err) => {
-      //       console.log(err.message);
-      //     });
-      // });
 
       //delete
       async function delDoc() {
-        const deletedatadoc = doc(db, "ids", dokterdocid.value);
+        const deletedatadoc = doc(db, "idh", dokterdocid.value);
         await deleteDoc(deletedatadoc)
           .then(() => {
             console.log("add data sukses");
