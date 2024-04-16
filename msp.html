@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Oxycon</title>
+    <title>SCCIC</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -66,6 +66,14 @@
               <div class="col">
                 <a href="resume.html">
                   <h6>Resume</h6>
+                </a>
+              </div>
+            </div>
+            <hr>
+            <div class="row tool">
+              <div class="col">
+                <a href="https://citylab.itb.ac.id/sccic-dashmgmt/projects">
+                  <h6>SDM</h6>
                 </a>
               </div>
             </div>
@@ -250,9 +258,9 @@
         nomor.innerHTML = ++plusnomor;
         namaDokter.textContent = doc.data().nama;
         spesialisasiDokter.textContent = doc.data().specialist;
-        alamatDokter.textContent = doc.data().phone;
-        phoneDokter.textContent = doc.data().status;
-        status.innerHTML = doc.data().alamat;
+        alamatDokter.textContent = doc.data().alamat;
+        status.innerHTML = doc.data().status;
+        phoneDokter.textContent = doc.data().phone;
         ControlDiv.innerHTML +=
           '<button style="background-color: Transparent; background-repeat: no-repeat; border: none; cursor: pointer; overflow: hidden; margin-right:12px" data-toggle="modal" data-target="#exampleModal1" onclick="Fillboxes(' +
           plusnomor +
